@@ -1,4 +1,8 @@
-This is a fork of Sprites In Detail that has been modified for niche sprite-replacement purposes. The internal name of the mod has been changed for compatibility reasons, and also not to bother the end user for updates to a version of Sprites In Detail they will never use. If you are seeing this, and do not know why someone would need sprites to be such a large size (256x256) use BleakCodex's version instead! It is much better for general purpose use, though I and others may be fixing a few bugs encountered in our process.
+This is a fork of Sprites In Detail that has been modified for niche sprite-replacement purposes. The internal name of the mod has been changed for compatibility reasons, and also not to bother the end user for updates to a version of Sprites In Detail they will never use. If you are seeing this, and do not know why someone would need sprites to be such a large size (256x256), you should NOT use this version!
+
+Also, BleakCodex is the genius behind this! I (The Stranger) only edited numbers to get things (mostly) looking right with this size. If you want to use Sprites in Detail, and don't *specifically* need this version, download BleakCodex's version instead! It is much better for general purpose use, though I and others may be fixing a few bugs encountered in our process.
+
+As for compatibility, I'll guess that this version is *not* compatible with the OG version, and any mods using it, will likely not work properly with both installed at once.
 
 Below is the original description.
 
