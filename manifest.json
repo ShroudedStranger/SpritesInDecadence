@@ -1,16 +1,17 @@
 ﻿{
-  "Name": "SpritesInDetail",
-  "Author": "BleakCodex",
-  "Version": "0.5.0",
-  "Description": "Higher pixel sprites",
-  "UniqueID": "BleakCodex.SpritesInDetail",
+  "Name": "SpritesInDecadence",
+  "Author": "BleakCodex, Forked by The Stranger",
+  "Version": "0.0.1-D",
+  "Description": "A fork of Sprites In Detail that allows for a much, MUCH larger sprite boundary.",
+  "UniqueID": "TheStranger.SpritesInDecadence", // The ID has been changed, because the mod's sprite format is basically completely different now, and to avoid annoying people with a notification to update to a version of SID they won't use.
   "EntryDll": "SpritesInDetail.dll",
-  "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": [ "Nexus:14487" ],
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [ ],
   "Dependencies": [
-    {
-      "UniqueID": "Pathoschild.ContentPatcher",
-      "MinimumVersion": "1.22.0"
-    }
+    { "UniqueID": "Pathoschild.ContentPatcher" }
   ]
+    // For anyone poking around in this code, BleakCodex is the genius behind this! I only edited numbers to get things (mostly) looking right. If you want to use Sprites in Detail, and don't *specifically* need this version, download BleakCodex's version instead!
+
+    // As for compatibility, I'll guess that this version is *not* compatible with the OG version, and any mods using it, will likely not work properly with both installed at once.
+
 }

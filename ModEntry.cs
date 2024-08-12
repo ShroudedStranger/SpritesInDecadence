@@ -132,6 +132,7 @@ namespace SpritesInDetail
 
                         foreach (Sprite sprite in data.Sprites)
                         {
+                            spritesToInvalidateDaily.Add(sprite.Target);
                             Dictionary<string, string?> conditionals = new Dictionary<string, string?>();
                             if (sprite.When is not null)
                             {
@@ -220,10 +221,7 @@ namespace SpritesInDetail
 
         private void GameLoop_DayStarted(object? sender, DayStartedEventArgs e)
         {
-            if (spritesToInvalidateDaily.Count > 0)
-            {
-                this.Helper.GameContent.InvalidateCache(asset => spritesToInvalidateDaily.Any(s => s == asset.Name.BaseName));
-            }
+            Helper.GameContent.InvalidateCache(asset => spritesToInvalidateDaily.Any(s => s == asset.Name.BaseName));
         }
 
         public static Dictionary<IManifest, Dictionary<string, string>> settings = new Dictionary<IManifest, Dictionary<string, string>>();
@@ -509,16 +507,16 @@ namespace SpritesInDetail
                             updatedOrigin = new Vector2(16, 107);
                         }
                     } else if (r.Height == 24) {
-                        updatedDestination = new Rectangle(destination.X, destination.Y - 80, (int)(a.HDTextureInfo.SpriteWidth * scale.X), (int)(a.HDTextureInfo.SpriteHeight * scale.Y)); ;
-                        updatedSource = new Rectangle?(new Rectangle(0, 0, 64, 110));
+                        updatedDestination = new Rectangle(destination.X, destination.Y - 198, (int)(a.HDTextureInfo.SpriteWidth * scale.X), (int)(a.HDTextureInfo.SpriteHeight * scale.Y)); ;
+                        updatedSource = new Rectangle?(new Rectangle(0, 0, 256, 250));
                         if (origin.X == 8 && origin.Y == 12)
                         {
                             //Social Tab
-                            updatedOrigin = new Vector2(32, 55);
+                            updatedOrigin = new Vector2(128, 190);
                         } else
                         {
                             //Calendar
-                            updatedOrigin = new Vector2(16, 34);
+                            updatedOrigin = new Vector2(118, 178);
                         }
                     }
                 }

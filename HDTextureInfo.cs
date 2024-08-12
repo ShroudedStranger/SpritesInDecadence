@@ -48,11 +48,11 @@ namespace SpritesInDetail
             Target = sprite.Target;
             HDTexture = hdTexture;
 
-            WidthScale = sprite.WidthScale ?? 4;
-            HeightScale = sprite.HeightScale ?? 4;
+            WidthScale = sprite.WidthScale ?? 16;
+            HeightScale = sprite.HeightScale ?? 8;
 
-            SpriteWidth = sprite.SpriteWidth ?? 32;
-            SpriteHeight = sprite.SpriteHeight ?? 64;
+            SpriteWidth = sprite.SpriteWidth ?? 256;
+            SpriteHeight = sprite.SpriteHeight ?? 256;
 
             if (isFarmer)
             {
@@ -67,8 +67,8 @@ namespace SpritesInDetail
                 //For 2x resolution texture with 2x resolution sprites it is (16, 48)
                 //For 4x resolution textures with 4x resolution sprites it is (32, 96)
                 //For 4x resolution textures with 2x resolution sprites moved to the bottom it would be (32, 112)
-                SpriteOriginX = sprite.SpriteOriginX ?? 32;
-                SpriteOriginY = sprite.SpriteOriginY ?? 112;
+                SpriteOriginX = sprite.SpriteOriginX ?? 128;
+                SpriteOriginY = sprite.SpriteOriginY ?? 248;
             }
 
             if (!sprite.BreathType.HasValue || sprite.BreathType == BreathType.Male)
